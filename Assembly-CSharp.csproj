@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Wm3Util\Scripts\LevelChange.cs" />
     <Compile Include="Assets\Wm3Util\Scripts\Wm3Flags.cs" />
     <None Include="Assets\Wm3Util\Shaders\Wm3Lighting.cginc" />
     <None Include="Assets\Wm3Util\Shaders\Wm3Sprite.shader" />
