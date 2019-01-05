@@ -1,7 +1,12 @@
-# Wm3Util
-.wm3 importer for Unity
+# Wm3Util_Sample
+Sample project using Wm3Util
 
 ## What is this?
+
+This project is a sample you can just build, run and explore. It is showing Wm3Util in use.
+
+
+## What is Wm3Util?
 
 Wm3Util is a set of import scripts for the Unity Engine in order to load .wm3 files created by A3Tools.
 A3Tools is a separate tool based on the Acknex8 engine, which converts Acknex3 raycaster levels to 3d meshes.
@@ -9,6 +14,9 @@ The .wm3 format was developed with Acknex8 use in mind, but it theoretically can
 
 As Acknex8 does not feature a WYSIWYG development environment, it is very tedious to refine .wm3 levels.
 To overcome this, Wm3Util was developed, since Unity allows for more comfortable scene/level editing.
+
+The Wm3Util project can be obtained from Github: 
+[https://github.com/firoball/Wm3Util_sample](https://github.com/firoball/Wm3Util_sample)
 
 
 ## What is A3Tools?
@@ -23,58 +31,44 @@ A3Tools utilizes the Acknex8 engine to operate, Windows binaries are included. T
 [https://github.com/firoball/A3Tools](https://github.com/firoball/A3Tools)
 
 
-## Why should I use Wm3Util?
+## Which manual changes were done?
 
-Since you came here somehow, I expect you are aware of the existence of Acknex3, Acknex8 and Unity.
-So let's keep this short.
-
-Use this utility to pretty much whatever you want:
-* Convert your old Acknex3 levels for fun
-* Use converted level as base for some retro project
-* Try to break the tool by importing awkward levels
-* Pure nostalgia
-* Learning reasons
-
-
-## How does it work?
-
-Step-by-step guide:
-* Use A3Tools to convert a level of choice (refer to A3Tools documentation)
-* Fork Wm3Util project
-* Copy all generated files from A3Tools output directory to *Assets/Import* of your Wm3Util fork
-* Rename all .wm3 files to .wm3.bytes in order to make sure Unity reads the contents properly
-* Open your Wm3Util fork in Unity
-* Open *Window -> Wm3 Importer*
-
-The Wm3 Importer panel will show up. Configuration must be done for template materials and level.
-
-![Wm3 Importer Panel](wm3panel.jpg)
-
-Drag any .wm3.bytes file of choice to the Wm3 Importer dialog.
-The template materials can be found in *Assets/Wm3Util/Materials*. Drag them to the dialog as shown.
-
-They are built in a way to imitate the Acknex3 look as close as possible. Customization is possible, though.
+While the import process runs automatically, some additional manual work was applied to this sample:
+* Imported several .wm3 files. 
+* Renamed *generated* folders so they are not overwritten by the next import process
+* Merged several .wm3 imports into single scene
+* Made doors and enemies passable for better exploration experience
+* Covered all perma-death pitfalls with invisible planes
+* Added simple level change system
+* Added FPSControllers for navigation
 
 
-## Give me Samples!
+## Where can I "play"?
 
-A sample project will be forked soon.
+A WebGL version was uploaded at:
+[http://firoball.de/unity/kandoria](http://firoball.de/unity/kandoria)
+Requires a WebGL and Javascript capable browser.
+
+
+## How do I "play"?
+
+* Move - WASD
+* Look - Mouse
+* Jump - Space
+* Lock mouse - click into graphic area
+* Unlock mouse - Esc
 
 
 ## Future Development
 
 This was a Unity learning project for me and is finished as such.
-Of course there are many improvements possible (like animated textures and player positioning), 
-but usually they also require an A3Tools and .wm3 format update.
-
-This quickly adds up to a lot of work for little use. Acknex3 was not used very commonly at its time.
-In case you are one of the very few former Acknex3 users and have a special request, feel free to contact me.
 
 
 ## Compatibility
 
-Wm3Util was developed and tested with Unity Version 2018.3.0f2 Personal.
+Wm3Util_sample was developed and tested with Unity Version 2018.3.0f2 Personal.
 Downwards compatibility was not tested.
+Test build were done successfully for Windows and WebGL (browser) platforms.
 
 
 ## Legal stuff
