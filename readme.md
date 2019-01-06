@@ -1,4 +1,4 @@
-# Wm3Util_Sample
+# Wm3Util_sample
 Sample project using Wm3Util
 
 ## What is this?
@@ -16,7 +16,7 @@ As Acknex8 does not feature a WYSIWYG development environment, it is very tediou
 To overcome this, Wm3Util was developed, since Unity allows for more comfortable scene/level editing.
 
 The Wm3Util project can be obtained from Github: 
-[https://github.com/firoball/Wm3Util_sample](https://github.com/firoball/Wm3Util_sample)
+[https://github.com/firoball/Wm3Util](https://github.com/firoball/Wm3Util)
 
 
 ## What is A3Tools?
@@ -43,14 +43,15 @@ While the import process runs automatically, some additional manual work was app
 * Added FPSControllers for navigation
 
 
-## Where can I "play"?
+## Where can I explore this?
 
 A WebGL version was uploaded at:
 [http://firoball.de/unity/kandoria](http://firoball.de/unity/kandoria)
+
 Requires a WebGL and Javascript capable browser.
 
 
-## How do I "play"?
+## How do I explore this?
 
 * Move - WASD
 * Look - Mouse
